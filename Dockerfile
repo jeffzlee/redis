@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Matthew Endsley <mendsley@gmail.com>
+
 
 # 036A9C25BF357DD4 - Tianon Gravi <tianon@tianon.xyz>
 #   http://pgp.mit.edu/pks/lookup?op=vindex&search=0x036A9C25BF357DD4
