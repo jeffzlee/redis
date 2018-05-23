@@ -18,7 +18,7 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 
 WORKDIR /data
 
-EXPOSE 6379
+EXPOSE 6379 
 
 VOLUME /data
 
