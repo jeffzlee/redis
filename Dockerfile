@@ -11,9 +11,10 @@ RUN curl -o /usr/local/bin/gosu -sSL "https://github.com/tianon/gosu/releases/do
 RUN mkdir /data
 RUN chown redis:redis /data
 
-COPY src/ .
-RUN chmod +x /docker-entrypoint.sh
-ENTRYPOINT ["/docker-entrypoint.sh"]
+COPY entrypoint.sh /opt/entrypoint.sh
+
+RUN chmod +x /opt/entrypoint.sh
+ENTRYPOINT ["/opt/entrypoint.sh"]
 
 WORKDIR /data
 
