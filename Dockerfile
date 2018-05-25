@@ -23,4 +23,4 @@ EXPOSE 6379
 
 VOLUME /data
 
-CMD [ "redis-server" ]
+CMD [ "redis-server" , "/etc/redis.conf"]
