@@ -14,6 +14,7 @@ RUN chown redis:redis /data
 COPY entrypoint.sh /opt/entrypoint.sh
 
 RUN chmod +x /opt/entrypoint.sh
+#RUN sed /etc/redis.conf
 ENTRYPOINT ["/opt/entrypoint.sh"]
 
 WORKDIR /data
