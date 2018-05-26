@@ -14,7 +14,7 @@ RUN chown redis:redis /data
 COPY entrypoint.sh /opt/entrypoint.sh
 
 RUN chmod +x /opt/entrypoint.sh
-RUN sed -i -re 's/\#*\s* protected-mode yes/protected-mode no/g' /etc/redis.conf
+RUN sed -i -r 's/#*\s* protected-mode yes/protected-mode no/g' /etc/redis.conf
 ENTRYPOINT ["/opt/entrypoint.sh"]
 
 WORKDIR /data
